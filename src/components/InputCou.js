@@ -44,7 +44,7 @@ class InputCou extends React.Component {
                     
                     <form onSubmit={this.handleSubmit} className="f-container">
                         <input type="text" placeholder="Add your course..." value={this.state.title} onChange={this.onChange} className="f-input"/>
-                        <input type="submit" value="Add Course" className="f-submit"/>
+                        <input type="submit" value="Add Course" className={theme}/>
                     </form>
                 <button className={theme} onClick={this.changeTheme}>Click here to change the theme</button>
             </div>)

@@ -4,7 +4,7 @@ import { Component } from "react";
 
 class CouItem extends Component {
     render(){
-        return <li className="CourseList">
+        return <li className="cou-list">
             
             {this.props.course.title}
            
