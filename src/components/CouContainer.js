@@ -3,7 +3,7 @@ import Header from "./Header";
 import CouList from "./CouList";
 import InputCou from "./InputCou";
 import { v4 as uuidv4 } from "uuid";
-// import { InstantSearch} from 'react-instantsearch-dom';
+
 
 import "../App.css";
 
