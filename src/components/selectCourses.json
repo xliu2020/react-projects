@@ -1,0 +1,54 @@
+
+        { "courses":[
+            {   "id":"CNIT103",
+                "title":"CNIT103 - Hardware – 3 units",
+                "added":true
+            },          
+            {
+                "id":"CNIT131",
+                "title":"CNIT131 – Internet & Intro to HTML, CSS – 3 units",
+                "added":true
+            },
+            {
+                "id":"CNIT106",
+                "title":"CNIT106 – Introduction to Networks – 3 units",
+                "added":true
+            },
+            {
+                "id":"CNIT120",
+                "title":"CNIT120 – Network Security – 3 units",
+                "added":true
+            },
+            {
+                "id":"CNIT122",
+                "title":"CNIT122 – SEO & Analytics for Web Dev – 3 units",
+                "added":true
+            },
+            {
+                "id":"CNIT123",
+                "title":"CNIT123 – Mobile Web w/HTML, CSS & JS – 3 units",
+                "added":true
+            },
+            {
+                "id":"CNIT124",
+                "title":"CNIT124 – JavaScript, jQuery, AJAX – 3 units",
+                "added":true
+            },
+            {
+                "id":"CNIT125",
+                "title":"CNIT125 – World Web Wide – 3 units",
+                "added":true
+            },
+            {
+                "id":"CNIT223",
+                "title":"CNIT223 – Python – 3 units",
+                "added":true
+            },
+            {
+                "id":"CNIT225",
+                "title":"CNIT225 – Basic JavaScript – 3 units",
+                "added":true
+            }
+            ]
+        }
+    

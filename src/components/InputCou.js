@@ -1,4 +1,6 @@
 import React from "react";
+// import algoliasearch from "algoliasearch";
+// import { InstantSearch, SearchBox } from 'react-instantsearch-dom';
 
 class InputCou extends React.Component {
 
@@ -11,13 +13,6 @@ class InputCou extends React.Component {
         
     };
 
-    changeTheme= () => {
-
-       this.setState({
-           isGreen:!this.state.isGreen
-        })
-        
-    };
 
     onChange = e => {
         this.setState({
@@ -38,17 +33,18 @@ class InputCou extends React.Component {
 
     render(){
 
-        const theme=this.state.isGreen ? "green" : "blue";
+        // const theme=this.state.isGreen ? "green" : "blue";
 
-        return (<div>
+        return (<div className="inputCourse">
                     
                     <form onSubmit={this.handleSubmit} className="f-container">
+                   
                         <input type="text" placeholder="Add your course..." value={this.state.title} onChange={this.onChange} className="f-input"/>
-                        <input type="submit" value="Add Course" className={theme}/>
-                    </form>
-                <button className={theme} onClick={this.changeTheme}>Click here to change the theme</button>
+                        <input type="submit" value="Add Course" className="f-submit"/>
+                    </form>               
+                <button className="changeThemeBtn" onClick={this.props.changeThemeProps}>Click here to change the theme</button>
             </div>)
     }
 }
 
-export default InputCou
+export default InputCou;

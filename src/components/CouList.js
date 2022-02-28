@@ -1,11 +1,25 @@
 import React from "react";
-import CouItem from "./CouItem";
+import { Component } from "react";
 
-class CouList extends React.Component {
+
+function CouItem(props) {
+    
+        return (
+            <li className="course-item">
+                {props.course.title}
+                <button onClick={()=>props.deleteCouProps(props.course.id)}>
+                    Delete
+                </button>                
+            </li>     
+        )  
+   
+}
+
+class CouList extends Component {
     
     render(){
         return(
-            <div className="CourseList">
+            <div className="course-list">
                 {this.props.courses.map(course => (
                    <CouItem key={course.id} course={course} deleteCouProps={this.props.deleteCouProps}/>
                 ))}

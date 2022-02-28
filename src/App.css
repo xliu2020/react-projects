@@ -1,33 +1,83 @@
 * {
     box-sizing: border-box;
-    
 
 }
+
+.green {
+
+    --pageBgColor: rgb(83, 156, 87);
+    --buttonColor:rgb(245, 175, 83);
+    --headerColor:rgb(174, 236, 177)
+
+
+}
+
+.purple {
+
+    --pageBgColor: rgb(91, 106, 175);
+    --buttonColor:rgb(255, 187, 0);
+    --headerColor:rgb(176, 190, 252);
+    --fontColor:white;
+
+}
+    
+
 
 body {
    line-height: 1.5;
+   margin:0;
+   padding:0;
 
 }
 
-.f-submit,.green{
+.container {
 
-    background-color: rgb(91, 175, 175);
-    padding:5px 7px;
-    margin:2px;
+    min-width: 600px;
+    background-color:var(--pageBgColor);
+    padding:25px 10px 35px;
     border:none;
+    transition: all .5s ease;
+    
+}
+h1 {
 
+    color:var(--headerColor);
+    font-size:2.5rem;
 }
 
-.blue {
 
-    background-color: rgb(91, 106, 175);
-    padding:5px 7px;
-    margin:2px;
+.inputCourse {
+
+    display:flex;
+    margin-bottom: 20px;
+}
+
+.f-input {
+
+    width:200px;
+    padding:7px 15px;
+}
+.f-submit, button {
+
+    padding:7px 15px;
+    margin:0 0 15px 15px;
     border:none;
-    color:white
 }
 
-.cou-list{
+.changeThemeBtn {
+
+    cursor:pointer
+   
+}
+
+.course-list{
 
     list-style-type: none;
+    color:var(--fontColor);
 }
+
+.course-item button {
+
+    background-color: var(--buttonColor);
+}
+
